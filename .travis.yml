@@ -14,6 +14,7 @@ before_install:
   - tar xzf boost_1_57_0.tar.gz
   - cd boost_1_57_0
   - ./bootstrap.sh --prefix=/usr/local
+  - cd ..
 
 install:
   # g++4.8.1
