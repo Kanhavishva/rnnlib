@@ -273,8 +273,8 @@ template<class T> static string str(const T& t)
 template<class T> static string str(const vector<T>& t)
 {
 	stringstream ss;
-	for (const T &v : t) {
-	  ss << v;
+	for (int i = 0; i < t.size(); ++i) {
+	  ss << t[i];
 	}
 	return ss.str();
 //	return lexical_cast<string>(t);
@@ -282,8 +282,8 @@ template<class T> static string str(const vector<T>& t)
 template<class T, class T2> static string str(const map<T, T2>& t)
 {
 	stringstream ss;
-	for (const auto &v : t) {
-	  ss << v.second;
+	for (typename map<T, T2>::const_iterator v = t.begin(); v != t.end(); ++v) {
+	  ss << v->second;
 	}
 	return ss.str();
 //	return lexical_cast<string>(t);
