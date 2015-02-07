@@ -5,6 +5,7 @@ compiler:
 
 before_install:
   - sudo apt-get install libnetcdf-dev
+  - sudo apt-get install libboost-all-dev
 
 os:
   - linux
