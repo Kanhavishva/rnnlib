@@ -1,5 +1,7 @@
 RNNLIB is written in C++ and should compile on any platform. However it is currently only tested for Linux and OSX.
 
+[![Build Status](https://travis-ci.org/xavigonzalvo/rnnlib.svg)](https://travis-ci.org/xavigonzalvo/rnnlib)
+
 Building it requires the following:
 
 * A modern C++ compiler (e.g. gcc 3.0 or higher)
