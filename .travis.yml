@@ -13,7 +13,7 @@ before_install:
   - wget -O boost_1_57_0.tar.gz http://sourceforge.net/projects/boost/files/boost/1.57.0/boost_1_57_0.tar.gz/download
   - tar xzf boost_1_57_0.tar.gz
   - cd boost_1_57_0
-  - ./bootstrap.sh --prefix=/usr/local
+  - ./bootstrap.sh --libdir=/tmp/boost --includedir=/tmp/boost
   - cd ..
 
 install:
@@ -25,5 +25,5 @@ os:
   - linux
 
 script:
-  - CXXFLAGS="-I/usr/local/include/ -L/usr/local/lib" ./configure
+  - CXXFLAGS="-I/tmp/boost -L/tmp/boost" ./configure
   - make
