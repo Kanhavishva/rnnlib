@@ -11,7 +11,7 @@ before_install:
   - sudo apt-get update -qq
   # Install boost version 1.57
   - wget https://launchpad.net/~apokluda/+archive/ubuntu/boost1.53/+build/4382509/+files/libboost1.53-dev_1.53.0-1~apokluda~precise_i386.deb
-  - sudo dpkg -i libboost1.53-dev_1.53.0-1~apokluda~precise_i386
+  - sudo dpkg -i libboost1.53-dev_1.53.0-1~apokluda~precise_i386.deb
 
 install:
   # g++4.8.1
