@@ -4,6 +4,10 @@ To run the experiments, the RNNLIB/utilities directory must be added to your pyt
 - SciPy
 - ScientificPython (NOT Scipy)
 - PIL
+
+In the examples directoy type:
+
+source setup.sh
  
 In each subdirectory type 
 
