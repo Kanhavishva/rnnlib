@@ -20,7 +20,7 @@ install:
   - if [ "$CXX" = "g++" ]; then sudo apt-get install -qq g++-4.8; fi
   - if [ "$CXX" = "g++" ]; then export CXX="g++-4.8"; fi
   # Install boost.
-  - (cd $BOOST_ROOT; ./bootstrap.sh --with-libraries=array,concept,range,bimap,algorithm,assign)
+  - (cd $BOOST_ROOT; ./bootstrap.sh --with-libraries=system)
   - (cd $BOOST_ROOT; sudo ./b2 threading=multi --prefix=/usr/local -d0 install)
 
 os:
