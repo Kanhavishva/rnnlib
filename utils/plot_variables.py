@@ -1,3 +1,4 @@
+#!/usr/bin/python
 #Copyright 2009,2010 Alex Graves
 #
 # This file is part of RNNLIB.
@@ -15,7 +16,6 @@
 # You should have received a copy of the GNU General Public License
 # along with RNNLIB.  If not, see <http://www.gnu.org/licenses/>.
 
-#!/usr/bin/env python
 #from mpl_toolkits.mplot3d import Axes3D
 from optparse import OptionParser
 from pylab import *
