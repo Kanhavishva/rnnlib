@@ -8,7 +8,7 @@ Building it requires the following:
 * GNU Libtool
 * GNU automake version 1.9 or higher
 * the NetCDF scientific data library
-* Boost C++ Libraries version 1.36 or higher (headers only, no compilation needed)
+* Boost C++ Libraries version 1.5 or higher (headers only, no compilation needed)
 
 In addition, the following python packages are needed for the auxiliary scripts in the 'utils' directory:
 
