@@ -28,5 +28,5 @@ os:
 
 script:
   - ls -l /tmp/boost
-  - CXXFLAGS="-I/tmp/boost -L/tmp/boost" ./configure
+  - ./configure
   - make
