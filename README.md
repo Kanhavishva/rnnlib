@@ -7,8 +7,8 @@ Building it requires the following:
 * A modern C++ compiler (e.g. gcc 3.0 or higher)
 * GNU Libtool
 * GNU automake version 1.9 or higher
-* the NetCDF scientific data library
-* Boost C++ Libraries version 1.36 or higher (headers only, no compilation needed)
+* the NetCDF scientific data library including binaries (nco: http://nco.sourceforge.net/).
+* Boost C++ Libraries version 1.5 or higher (headers only, no compilation needed)
 
 In addition, the following python packages are needed for the auxiliary scripts in the 'utils' directory:
 
@@ -19,6 +19,8 @@ In addition, the following python packages are needed for the auxiliary scripts 
 And this package is needed to create and manipulate netcdf data files with python, and to run the experiments in the 'examples' directory:
 
 * ScientificPython (NOT Scipy)
+http://dirac.cnrs-orleans.fr/plone/software/scientificpython/installation-instructions/
+When building, make sure you specify export NETCDF_PREFIX=/opt/local/.
 
 To build RNNLIB, first download the source from here, then enter the root directory and type
 
