@@ -9,6 +9,7 @@ before_install:
   - if [ $TRAVIS_OS_NAME == osx ]; then sudo port install netcdf-cxx; fi
 
 os:
+  - linux
   - osx
 
 script:
