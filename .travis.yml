@@ -1,0 +1,14 @@
+language: cpp
+
+compiler:
+  - gcc
+
+before_install:
+  - sudo apt-get install libnetcdf-dev
+
+os:
+  - linux
+
+script:
+  - ./configure
+  - make
