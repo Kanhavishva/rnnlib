@@ -14,6 +14,7 @@ before_install:
   - tar xzf boost_1_57_0.tar.gz
   - cd boost_1_57_0
   - ./bootstrap.sh --libdir=/tmp/boost --includedir=/tmp/boost
+  - ./b2 install
   - cd ..
 
 install:
