@@ -27,6 +27,5 @@ os:
   - linux
 
 script:
-  - ls -l /tmp/boost
   - ./configure
   - make
