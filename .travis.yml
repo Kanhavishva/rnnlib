@@ -4,7 +4,7 @@ compiler:
   - gcc
 
 before_install:
-  - sudo apt-get update && sudo apt-get install libnetcdf-dev libboost-all-dev; fi
+  - sudo apt-get update && sudo apt-get install libnetcdf-dev libboost-all-dev
   - sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.2 60 --slave /usr/bin/g++ g++ /usr/bin/g++-4.2
 
 os:
