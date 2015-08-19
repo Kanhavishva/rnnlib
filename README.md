@@ -24,20 +24,20 @@ When building, make sure you specify export NETCDF_PREFIX=/opt/local/.
 
 To build RNNLIB, first download the source from here, then enter the root directory and type
 
-$ ./configure
-$ make
+    $ ./configure
+    $ make
 
 This should create the binary file 'rnnlib' in the 'bin' directory. 
 Note that on most linux systems the default installation directory for the Boost headers is '/usr/local/include/boost-VERSION_NUMBER' which is not on the standard include path. 
 In this case type
 
-$ CXXFLAGS=-I/usr/local/include/boost-VERSION_NUMBER/ ./configure
-$ CXXFLAGS="-I/opt/local/include/ -L/opt/local/lib" ./configure
-$ make
+    $ CXXFLAGS=-I/usr/local/include/boost-VERSION_NUMBER/ ./configure
+    $ CXXFLAGS="-I/opt/local/include/ -L/opt/local/lib" ./configure
+    $ make
 
 If you wish to install the binary type:
 
-$ make install
+    $ make install
 
 By default this will use '/usr' as the installation root (for which you will usually need administrator privileges). 
 You can change the install path with the —prefix option of the configure script (use ./configure —help for other options)
